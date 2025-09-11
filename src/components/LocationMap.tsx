@@ -10,23 +10,16 @@ const LocationMap = () => {
           {/* Map */}
           <div className="relative">
             <Card className="overflow-hidden shadow-premium">
-              <div className="aspect-[4/3] bg-gradient-subtle flex items-center justify-center relative">
-                {/* Placeholder for Google Map - would integrate with Google Maps API */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/30"></div>
-                <div className="relative z-10 text-center">
-                  <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                  <p className="font-display text-xl font-semibold text-foreground mb-2">
-                    Interactive Map
-                  </p>
-                  <p className="font-body text-foreground/70">
-                    Click to view in Google Maps
-                  </p>
-                </div>
-                {/* Mock map overlay */}
-                <div className="absolute inset-0 opacity-30">
-                  <div className="w-full h-full bg-gradient-to-r from-green-100 to-blue-100"></div>
-                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse"></div>
+              <div className="aspect-[4/3] relative overflow-hidden cursor-pointer group">
+                <img 
+                  src="/lovable-uploads/d5de4b96-5770-434e-8984-b76f2f9a4927.png" 
+                  alt="The Hornbill Lodge location sign in Nata, Botswana"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center text-white">
+                    <MapPin className="w-8 h-8 mx-auto mb-2" />
+                    <p className="font-body text-sm">Click to view in Google Maps</p>
                   </div>
                 </div>
               </div>
@@ -81,8 +74,8 @@ const LocationMap = () => {
                 <div>
                   <h4 className="font-body font-semibold text-foreground mb-1">Contact</h4>
                   <p className="font-body text-sm text-foreground/70">
-                    +267 621 1234<br />
-                    info@hornbilllodge.bw
+                    +267 74992291<br />
+                    +267 2471022
                   </p>
                 </div>
               </div>
