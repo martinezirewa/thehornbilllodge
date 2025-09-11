@@ -21,11 +21,11 @@ const Index = () => {
         {/* 1. Hero Section with Slideshow */}
         <HeroSlideshow />
         
-        {/* 2. Why Stay With Us */}
-        <WhyStaySection />
-
-        {/* 3. About the Lodge */}
+        {/* 2. About the Lodge */}
         <AboutLodgeSection />
+
+        {/* 3. Why Stay With Us */}
+        <WhyStaySection />
 
         {/* 4. Featured Rooms Carousel */}
         <FeaturedRoomsCarousel />
